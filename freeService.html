@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>期末專題--歡迎來到我的首頁</title>
+    <title>期末專題--免費服務</title>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
@@ -39,67 +39,28 @@
             </div>
         </nav>
     </div>
-    <!--第一列第一部分-->
-    <div class="parallax-container section scrollspy" style="height: 740px;">
-        <!--第一列圖上-->
-        <div class="section no-pad-bot">
-            <div class="container">
-                <br>
-                <br>
-                <h1 class="header center teal-text text-lighten-2">歡迎！</h1>
-                <div class="row center">
-                    <h5 class="header col s12 lighten-3 orange-text">歡迎來到我的網頁，希望您會有個很好的瀏覽體驗~</h5>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="white-text">照片地點：元智五館
-                        <br><a href="https://www.flickr.com/photos/tsaiian/18584995939/in/photolist-ujhXNt-5zkX4C-6m7moV-5Rgdo1-6vKrHm-5RbR3R-69EvsL-6jfLqi-5THLHE-dkX6Jr-dkXarN-dkX6uz-dkX6nt-dkX6fV-dkX664-dkX9K3-dkX9B3-dkX5JF-dkX9qh-dkX9gm-dkX5jV-dkX5c4-dkX54a-dkX8L9-dkX4PB-dkX4GD-dkX4AB-dkX8hW-dkX4p6-dkX4hB-dkX4aZ-dkX7Q1-dkX3Rz-dkX7xE-dkX3Bt-dkX3sK-dkX3mP-dkX3g2-dkX36k-dkX2ZZ-dkX2Tr-dkX6A7-dkX2Be-dkX6fq-dkX2k4-dkX2aT-dkX238-dkX5FC-dkX1Ma-dkX1Dx" style="color:white;">出處：Flickr@tsaiian</a></p>
-                </div>
-                <div class="row center">
-                    <br>
-                    <br>
-                    <br>
-                    <a href="#GetStarted" class="btn-large waves-effect waves-light teal lighten-1">讓我們開始瀏覽吧～</a>
-                </div>
-            </div>
-        </div>
-        <!--第一列圖-->
-        <div class="parallax"><img src="img/2015YZU.jpg" width="50%" alt="2015元智畢業典禮"></div>
-    </div>
-    <!--第一列第二部分-->
-    <div class="section grey lighten-3">
-        <div class="section scrollspy" id="GetStarted">
-            <h2 class="header container">Get Started!!!</h2>
-            <br>
-            <br>
-            <p class="grey-text text-darken-3  container">上面導覽列有連結點選
-                <br>不過....何不繼續往下看呢^^</p>
-            <br>
-        </div>
-    </div>
-    <!--第二列第一部分-->
-    <div class="parallax-container section scrollspy" id="Second">
-        <!--第二列圖-->
-        <div class="parallax"><img src="img/Head.jpg" width="50%" alt="大頭貼"></div>
-    </div>
-    <!--第二列第二部分-->
-    <div class="section grey lighten-3">
-        <div class="section scrollspy" id="SecondContainer">
-            <h2 class="header container">我是誰？</h2>
-            <br>
-            <br>
-            <p class="grey-text text-darken-3  container">我是張楷翊，就讀元智大學資管系，目前一年級
-                <br>如果你對此網頁原始碼有興趣，可以到<a href="https://github.com/cg9250110/104Web.project" style="color:teal;">這裡</a>看看喔!!</p>
-        </div>
-    </div>
     <!--Floating dot-->
     <div class="container">
         <div class="fixed-action-btn horizontal section" id="Dot" style="bottom: 45px; right: 38px;">
             <a class="btn-floating btn-large red tooltipped" data-position="top" data-delay="10" data-tooltip="帶我到最上面" href="#Top">
                 <i class="large material-icons">publish</i>
             </a>
+        </div>
+    </div>
+    <!--Content-->
+    <div class="container">
+        <h2 class="teal-text">免費服務</h2>
+        <hr>
+        <h4>內容等待補全...</h4>
+    </div>
+    <!--Onload Popup-->
+    <div class="modal" id="Pop">
+        <div class="modal-content">
+            <h4 class="teal-text">不好意思</h4><br>
+            <p>此網頁還在維護中，尚未完成</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-teal btn-flat">確定</a>
         </div>
     </div>
     <!--FooterUpper-->
@@ -144,6 +105,13 @@
     <script src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript">
+    (function($) { //Popup Fun
+        $(function() {
+            $('#Pop').openModal();
+        });
+    })(jQuery);
+    </script>
 </body>
 
 </html>
