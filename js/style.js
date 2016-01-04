@@ -11,6 +11,8 @@
                     $('.button-collapse').sideNav();
                     $('.parallax').parallax();
                     $('.scrollspy').scrollSpy();
+                    $('select').material_select();
+                    $('input#input_text, textarea#textarea1').characterCounter();
                     $('ul.tabs').tabs();
                 }
             ); // end of document ready
