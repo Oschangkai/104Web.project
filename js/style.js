@@ -14,6 +14,8 @@
                     $('select').material_select();
                     $('input#input_text, textarea#textarea1').characterCounter();
                     $('ul.tabs').tabs();
+                    $('.slider').slider();
+                    $('.materialboxed').materialbox();
                 }
             ); // end of document ready
 
