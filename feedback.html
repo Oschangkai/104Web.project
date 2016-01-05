@@ -7,6 +7,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fort.min.css">
     <!--<link type="text/css" href="css/material.min.css" rel="stylesheet">-->
 </head>
 
@@ -50,7 +51,7 @@
     <!--Content-->
     <div class="container">
         <h2 class="teal-text">意見回饋</h2>
-        <div class="row">
+        <div class="row form">
             <form class="col s12">
                 <div class="row">
                     <fieldset>
@@ -107,11 +108,27 @@
                         </div>
                     </fieldset>
                     <br>
-                    <fieldset>
+                    <fieldset style="height: 290px">
                         <legend>
                             <h5 class="teal-text">網站回饋</h5></legend>
+                        <div class="input-field col s12" style="height: 100px">
+                            <p>
+                                <label>您覺得此網站的哪一個部分做得不錯？</label>
+                                <br>
+                                <input type="checkbox" class="filled-in" id="Typesetting" />
+                                <label for="Typesetting">排版&nbsp;&nbsp;</label>
+                                <input type="checkbox" class="filled-in" id="Style" />
+                                <label for="Style">視覺風格&nbsp;&nbsp;</label>
+                                <input type="checkbox" class="filled-in" id="FontSize" />
+                                <label for="FontSize">字體大小&nbsp;&nbsp;</label>
+                                <input type="checkbox" class="filled-in" id="FontWidth" />
+                                <label for="FontWidth">字體行距&nbsp;&nbsp;</label>
+                                <input type="checkbox" class="filled-in" id="Richness" />
+                                <label for="Richness">網頁豐富度&nbsp;&nbsp;</label>
+                            </p>
+                        </div>
                         <div class="input-field col s12">
-                        <i class="material-icons prefix">mode_edit</i>
+                            <i class="material-icons prefix">mode_edit</i>
                             <textarea id="feedback" class="materialize-textarea" length="200"></textarea>
                             <label for="feedback">意見回饋</label>
                         </div>
@@ -163,9 +180,14 @@
         </div>
     </footer>
     <!--<script type="text/javascript" src="js/material.min.js"></script>-->
-    <script src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/style.js"></script>
+    <!--Form Bar-->
+    <script type="text/javascript" src="js/fort.min.js"></script>
+    <script>
+    Fort.flash("#2196f3", "#e91e63", "#ffb300", "#76ff03", "#e53935");
+    </script>
 </body>
 
 </html>
