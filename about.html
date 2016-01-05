@@ -43,22 +43,61 @@
     <div class="container">
         <h2 class="teal-text">About 關於我</h2>
         <hr>
-        <h4>內容等待補全...</h4>
-    </div>
-    <!--Onload Popup-->
-    <div class="modal" id="Pop">
-        <div class="modal-content">
-            <h4 class="teal-text">不好意思</h4><br>
-            <p>此網頁還在維護中，尚未完成</p>
+        <h4>作者</h4>
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="card-panel light-blue hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <a class="tooltipped" data-position="left" data-delay="1" data-tooltip="阿囉哈！" onclick="var $toastContent = $('<span>不要亂點我的頭貼!</span>');
+  Materialize.toast($toastContent, 1500, 'rounded');"><img src="img/head.jpg" align="middle" alt="Head" class="circle responsive-img z-depth-1"></a>
+                    </div>
+                    <div class="col s10">
+                        <span class="white-text"><h5><a onclick="var $toastContent = $('<span>嗨!</span>'); Materialize.toast($toastContent, 1500, 'rounded');" style="color: white">張楷翊</a>
+                        </h5>
+                        <p>學系：元智大學資管系一年級(104~)</p>
+                        <p>社團：<a href="http://itac-yzu.github.io/HomePage/" style="color: white">ITAC(Information Technology Association Club)</a></p>
+                        <p>聯絡方式：<a href="mailto:cg9250110@gmail.com" style="color: white">若有任何意見,可以寄信給我喔!</a></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-teal btn-flat">確定</a>
-        </div>
+        <br>
+        <h4>推銷區</h4>
+        <ul class="collection hoverable">
+            <li class="collection-item avatar">
+                <a href="https://github.com/cg9250110/104Web.project"><img src="img/GitHub-icon.png" alt="GithubLogo" class="circle"></a>
+                <span class="title"><b>Source code on Github</b></span>
+                <p>可以由Github上觀看source code,不吝嗇的話也請給我一顆星喔！
+                    <br> <a href="https://github.com/cg9250110/104Web.project" style="color: black">https://github.com/cg9250110/104Web.project</a>
+                </p>
+                <i class="material-icons secondary-content">grade</i>
+            </li>
+            <li class="collection-item avatar">
+                <a href="https://oscarkaiyi.wordpress.com/"><img src="img/Wordpress-icon.png" alt="" class="circle"></a>
+                <span class="title"><b>Wordpress筆記網站</b></span>
+                <p>裡面有一些小東西可以看,不過近期決定慢慢將它們移到Github管理
+                    <br> <a href="https://oscarkaiyi.wordpress.com/" style="color: black">https://oscarkaiyi.wordpress.com/</a>
+                </p>
+                <i class="material-icons secondary-content">grade</i>
+            </li>
+        </ul>
+        <ul class="collection hoverable">
+            <li class="collection-item avatar">
+                <i class="material-icons circle">info</i>
+                <span class="title"><b>小提示</b></span>
+                <p>使用Chorme，解析度1440*900瀏覽為佳
+                    <br> 使用MAC系統瀏覽可得最佳瀏覽效果唷！
+                </p>
+                <i class="material-icons secondary-content">grade</i>
+            </li>
+        </ul>
     </div>
     <!--Floating dot-->
     <div class="container">
         <div class="fixed-action-btn horizontal section" id="Dot" style="bottom: 45px; right: 38px;">
-            <a class="btn-floating btn-large red tooltipped" data-position="top" data-delay="1" data-tooltip="帶我到最上面" href="#Top">
+            <a class="btn-floating btn-large red tooltipped" data-position="top" data-delay="1" data-tooltip="帶我到最上面" href="#Top" onclick="var $toastContent = $('<span>碰！</span>');
+  Materialize.toast($toastContent, 500, 'rounded');">
                 <i class="large material-icons">publish</i>
             </a>
         </div>
@@ -70,13 +109,22 @@
                 <div class="col l6 s12">
                     <h5 class="white-text">個人小簡介</h5>
                     <p class="grey-text text-lighten-4">元智大學資管系一年級，是ITAC的社員，請多多指教</p>
-                    <!--GithubFollow-->
-                    <span>
-                        <a class="github-button" href="https://github.com/cg9250110" data-style="mega" data-count-href="/cg9250110/followers" data-count-api="/users/cg9250110#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @cg9250110 on GitHub">Follow</a><br>
-                        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+                    <!--GithubStar-->
+                    <a class="github-button" href="https://github.com/cg9250110/104Web.project" data-icon="octicon-star" data-style="mega" data-count-href="/cg9250110/104Web.project/stargazers" data-count-api="/repos/cg9250110/104Web.project#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star cg9250110/104Web.project on GitHub">Star</a>
+                    <br>
+                    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
                     <!--WordpressFollow-->
                     <a class="wordpress-follow-button" href="https://oscarkaiyi.wordpress.com" data-blog="https://oscarkaiyi.wordpress.com" data-lang="zh-tw" data-show-follower-count="true">Follow</a>
-                    <script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+                    <script type="text/javascript">
+                    (function(d) {
+                        var f = d.getElementsByTagName('SCRIPT')[0],
+                            p = d.createElement('SCRIPT');
+                        p.type = 'text/javascript';
+                        p.async = true;
+                        p.src = '//widgets.wp.com/platform.js';
+                        f.parentNode.insertBefore(p, f);
+                    }(document));
+                    </script>
                     </span>
                 </div>
                 <div class="col l4 offset-l2 s12">
@@ -96,7 +144,7 @@
         <!--FooterLower-->
         <div class="footer-copyright light">
             <div class="container">
-                © 2016 Copyright KaiYi
+                © 2016 Copyleft KaiYi
                 <span class="right"> Best View with 1440*900.&nbsp;&nbsp;&nbsp; Responsiveness for Mobile Devices</span>
             </div>
         </div>
@@ -105,13 +153,6 @@
     <script src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/style.js"></script>
-    <script type="text/javascript">
-    (function($) { //Popup Fun
-        $(function() {
-            $('#Pop').openModal();
-        });
-    })(jQuery);
-    </script>
 </body>
 
 </html>

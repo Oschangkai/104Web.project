@@ -76,7 +76,8 @@
     <!--Floating dot-->
     <div class="container">
         <div class="fixed-action-btn horizontal section" id="Dot" style="bottom: 45px; right: 38px;">
-            <a class="btn-floating btn-large red tooltipped" data-position="top" data-delay="1" data-tooltip="帶我到最上面" href="#Top">
+            <a class="btn-floating btn-large red tooltipped" data-position="top" data-delay="1" data-tooltip="帶我到最上面" href="#Top" onclick="var $toastContent = $('<span>碰！</span>');
+  Materialize.toast($toastContent, 500, 'rounded');">
                 <i class="large material-icons">publish</i>
             </a>
         </div>
@@ -88,10 +89,9 @@
                 <div class="col l6 s12">
                     <h5 class="white-text">個人小簡介</h5>
                     <p class="grey-text text-lighten-4">元智大學資管系一年級，是ITAC的社員，請多多指教</p>
-                    <!--GithubFollow-->
-                    <span>
-                        <a class="github-button" href="https://github.com/cg9250110" data-style="mega" data-count-href="/cg9250110/followers" data-count-api="/users/cg9250110#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @cg9250110 on GitHub">Follow</a><br>
-                        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+                    <!--GithubStar-->
+                    <a class="github-button" href="https://github.com/cg9250110/104Web.project" data-icon="octicon-star" data-style="mega" data-count-href="/cg9250110/104Web.project/stargazers" data-count-api="/repos/cg9250110/104Web.project#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star cg9250110/104Web.project on GitHub">Star</a><br>
+                    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
                     <!--WordpressFollow-->
                     <a class="wordpress-follow-button" href="https://oscarkaiyi.wordpress.com" data-blog="https://oscarkaiyi.wordpress.com" data-lang="zh-tw" data-show-follower-count="true">Follow</a>
                     <script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
@@ -114,7 +114,7 @@
         <!--FooterLower-->
         <div class="footer-copyright light">
             <div class="container">
-                © 2016 Copyright KaiYi
+                © 2016 Copyleft KaiYi
                 <span class="right"> Best View with 1440*900.&nbsp;&nbsp;&nbsp; Responsiveness for Mobile Devices</span>
             </div>
         </div>
